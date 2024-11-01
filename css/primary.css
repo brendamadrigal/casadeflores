@@ -1,26 +1,47 @@
 /*
 @author: Brenda Madrigal
-@ Date: OCTOBER 20, 2024
-LECTURE / WEEK 03
+@ Date: OCTOBER 28, 2024
+LECTURE / WEEK 04
 
 */ 
 
 /* Pseudo-class selector (change color when mouse is hovered over) */
 
+
+/* centering my content */
+
+* {
+        margin:0px auto 0px auto;
+        padding:10px 0 10px 0;
+
+}
+
 a:hover { 
 
         color: rgb(230, 5, 114);
         font-weight: bolder;
+
 }
 
 html { 
 
-        background-color: #F1F0EA;
+        background-color: #white;
         font-family: Arial, Helvetica, sans-serif;
         color: black;
      }
 
 /* Basic Tag Selector Examples */
+
+body{ 
+
+        width: 1400px;
+}
+
+ul { 
+
+        height: 150px;
+}
+
 h1 { 
 
         text-transform: uppercase;
@@ -33,15 +54,16 @@ h2 {
     }        
 
 
-h3  {
+h3 {
             color:blue;
             text-decoration: dotted underline blue; 
             font-size: 125%;
-    }
+    }       
 
 nav li {
-            color:blueviolet;
+            color:rgb(43, 195, 226);
             list-style: square;
+            
         }
 
 /* Class Selector Examples, on page bouquet.html */
@@ -54,11 +76,19 @@ nav li {
         }
 
 .footercopy { 
+
             font-style:italic;
             text-align: center;
-            background-color: blanchedalmond;
-            border: 25px black
+            background-color: pink;
+            border: 10px dotted black;
+            border-radius: 50px;
+            width:1400px;
+            padding: 10px;
+            margin:5px;
+            margin-top: 15%;
+
             }
+
 /* ID Selector */
 
 #localplaces, 
@@ -74,7 +104,7 @@ nav li {
 
 
 dl li:nth-of-type(odd) {
-            background-color: rgb(222, 210, 52);
+            background-color: rgba(234, 197, 224, 0.406);
             color: red;
             list-style-type: square;
             font-size: 25px;
@@ -85,5 +115,15 @@ dl li:nth-of-type(even) {
 
             background-color: rgb(230, 173, 204);
             color: hotpink;
-            font-size: 50px;
-                    }
+            font-size: 25px;
+                         }
+
+
+/* styles for the footer */
+
+footer {
+
+        margin: 0px 15px 0px 10px;
+        padding: 1em 0;
+        
+}
