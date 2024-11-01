@@ -40,6 +40,7 @@ body{
 ul { 
 
         height: 150px;
+        
 }
 
 h1 { 
@@ -66,6 +67,9 @@ nav li {
             
         }
 
+p{ 
+                margin:auto;
+}
 /* Class Selector Examples, on page bouquet.html */
 .center {
             display: block;
@@ -88,6 +92,8 @@ nav li {
             margin-top: 15%;
 
             }
+
+
 
 /* ID Selector */
 
@@ -124,6 +130,6 @@ dl li:nth-of-type(even) {
 footer {
 
         margin: 0px 15px 0px 10px;
-        padding: 1em 0;
+        padding:0;
         
 }
