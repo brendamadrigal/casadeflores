@@ -1,6 +1,5 @@
 /*
-
-@author: Brenda Madrigal
+ @author: Brenda Madrigal
 @ Date: NOVEMBER 02, 2024
 LECTURE / WEEK 05
 
@@ -11,6 +10,34 @@ LECTURE / WEEK 05
 
 
 /* centering my content */
+
+/* This is my navigation system that I am trying to center and create */
+/* still a work in progress 
+nav ul {
+        
+    overflow:hidden; 
+    float:right;
+    width: 1600px;
+    border-bottom: 4px solid darkmagenta;
+    margin:auto;
+    list-style: none;
+    text-align:justify;
+}
+
+nav li{ 
+    float: left;
+    padding:40px;
+}
+
+nav a{ 
+
+    display: block;
+    padding: 30px;
+    margin-right:auto;
+    
+}
+
+*/
 
 * {
         margin:0px auto 0px auto;
@@ -29,8 +56,23 @@ html {
 
         font-family: Arial, Helvetica, sans-serif;
         color: black;
-     }
+     }    
+nav { 
+        background-color: rgb(221, 240, 240);
+        list-style: none;
+        padding:10px;
+        padding-left:300px;
+        margin:10px 0px;
+        float:left;
+        clear:both;
+        width:1080px;
+}
 
+nav li {
+        float: left;
+        padding:5%;
+
+}
 /* Basic Tag Selector Examples */
 
 body{ 
@@ -41,8 +83,10 @@ body{
 ul { 
 
         height: 150px;
+        width:1080px;
         
 }
+
 
 h1 { 
 
@@ -57,44 +101,47 @@ h2 {
 
 
 h3 {
-            color:blue;
-            text-decoration: dotted underline blue; 
-            font-size: 125%;
+        color:blue;
+        text-decoration: dotted underline blue; 
+        font-size: 125%;
     }       
 
-nav li {
-            color:rgb(43, 195, 226);
-            list-style: square;
-            
-        }
+nav2 li {
+        background-color: bisque;
+        list-style: square;
+        clear:both;
+
+}
+#typeofevent {
+        float:left;
+        clear:both;
+
+}
 
 p{ 
-                margin:auto;
+        margin:auto;
 }
 /* Class Selector Examples, on page bouquet.html */
 .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 25%;
-            height: 25%;
-        }
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        height: 25%;
+}
 
 .footercopy { 
 
-            font-style:italic;
-            text-align: center;
-            background-color: pink;
-            border: 10px dotted black;
-            border-radius: 50px;
-            width:1400px;
-            padding: 10px;
-            margin:5px;
-            margin-top: 15%;
-
-            }
-
-
+        font-style:italic;
+        text-align: center;
+        background-color: pink;
+        border: 10px dotted black;
+        border-radius: 50px;
+        width:1400px;
+        padding: 10px;
+        margin:5px;
+        margin-top: 15%;
+ }
 
 /* ID Selector */
 
