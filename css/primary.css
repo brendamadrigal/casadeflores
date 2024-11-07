@@ -1,5 +1,5 @@
 /*
- @author: Brenda Madrigal
+@author: Brenda Madrigal
 @ Date: NOVEMBER 02, 2024
 LECTURE / WEEK 05
 
@@ -42,6 +42,7 @@ nav a{
 * {
         margin:0px auto 0px auto;
         padding:10px 0 10px 0;
+        box-sizing: border-box;
 
 }
 
@@ -61,11 +62,12 @@ nav {
         background-color: rgb(221, 240, 240);
         list-style: none;
         padding:10px;
-        padding-left:300px;
-        margin:10px 0px;
+        padding-left:55px;
+        margin:0 10px 0 10px;
         float:left;
         clear:both;
-        width:1080px;
+        width:95%;
+        text-align:center;
 }
 
 nav li {
