@@ -19,36 +19,9 @@ BUT SO FAR I AM BREAKING AND TRYING TO MAKE MY CODE WORK :) */
 /* This is my navigation system that I am trying to center and create */
 
 * {
-    margin:0px;
-    padding:10px;
+    margin:0px auto;
+    padding:10px 0;
     box-sizing: border-box;
-}
-nav ul{
-    overflow:hidden; /*planning ahead to clear floats */
-    padding-left:25px;
-    float:right;
-    width: 95%;
-    margin:0 10px 0 10px;
-    text-align:center;
-}
-
-nav li{ 
-    float: left;
-    text-align: center;
-    padding-left:13%;
-}
-
-nav a{ 
-
-    display: block;
-    padding: 30px;
-    margin-right:auto;
-    
-}
-a:hover { 
-
-    color: rgb(230, 5, 114);
-    font-weight: bolder;
 
 }
 
@@ -57,7 +30,50 @@ a:hover {
 html { 
     background-color: #f7e1f1;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
+}
+ul { 
+    width:1080px;
+    justify-content: space-between;
+
+}
+body{ 
+    width: 1400px;
+}
+
+/* Pseudo-class selector (change color when mouse is hovered over) */
+a:hover { 
+
+    color: rgb(230, 5, 114);
+    font-weight: bolder;
+
+}
+
+
+nav {
+    display: flex;
+    padding:1em;
+    background-color: aliceblue;
+    text-align: center;
+    justify-content: space-between;
+
+}
+nav li{ 
+    float: left;
+    list-style-type: none;
+    padding:3%;
+    justify-content: space-between;
+
+}
+
+nav a{ 
+    display: block;
+    padding: 30px;
+    
+}
+a:hover { 
+    color: rgb(230, 5, 114);
+    font-weight: bolder;
+
 }
 
 /* Class Selector */
@@ -94,15 +110,16 @@ p {
 .flowerdivider {
     clear:both;
     display:block;
-    width:1500px;
+    width:1300px;
     height:400px;
     margin:100px;
-    padding:5px;
+    padding:10px;
     object-fit:cover;
     overflow:hidden;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 /* styles for the footer */
+
 footer {
     text-align:center;
     margin:10px;

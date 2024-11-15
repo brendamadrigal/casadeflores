@@ -6,46 +6,18 @@ LECTURE / WEEK 06
 
 */ 
 
-/* Pseudo-class selector (change color when mouse is hovered over) */
-
 
 /* centering my content */
 
-/* This is my navigation system that I am trying to center and create */
-/* still a work in progress 
-nav ul {
-        
-    overflow:hidden; 
-    float:right;
-    width: 1600px;
-    border-bottom: 4px solid darkmagenta;
-    margin:auto;
-    list-style: none;
-    text-align:justify;
-}
-
-nav li{ 
-    float: left;
-    padding:40px;
-}
-
-nav a{ 
-
-    display: block;
-    padding: 30px;
-    margin-right:auto;
-    
-}
-
-*/
+/* still a work in progress  */
 
 * {
-        margin:0px auto 0px auto;
-        padding:10px 0 10px 0;
+        margin:0px auto;
+        padding:10px 0;
         box-sizing: border-box;
 
 }
-
+/* Pseudo-class selector (change color when mouse is hovered over) */
 a:hover { 
 
         color: rgb(230, 5, 114);
@@ -60,9 +32,11 @@ html {
         background-color: #f7e1f1;
 }    
 
+/* This is my navigation system that I am trying to center and create */
+
 nav {
         display: flex;
-        padding:1em 0;
+        padding:1em;
         background-color: aliceblue;
         text-align: center;
 }
