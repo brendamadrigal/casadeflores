@@ -5,18 +5,9 @@ LECTURE / WEEK 06
 
 */ 
 
-/* HERE WE HAVE OUR SEOONDARY CSS PAGE, FOR BOUQUET.HTML, WHERE WE ARE EXPLORING OUR FLOATING ITEMS... 
-AM I GOING TO LOSE MY HEAD PROBABLY
-BUT SO FAR I AM BREAKING AND TRYING TO MAKE MY CODE WORK :) */ 
-
-/* Pseudo-class selector (change color when mouse is hovered over) */
+/* Most likely broke my nav code once again, as I fixed my nav in the index and about page, we are back to square one fixing this secondary page */ 
 
 
-/* centering my content */
-
-
-
-/* This is my navigation system that I am trying to center and create */
 
 * {
     margin:0px auto;
@@ -47,8 +38,7 @@ a:hover {
     font-weight: bolder;
 
 }
-
-
+/* This is my navigation system that I am trying to center and create */
 nav {
     display: flex;
     padding:1em;
@@ -110,13 +100,11 @@ p {
 .flowerdivider {
     clear:both;
     display:block;
-    width:1300px;
+    width:1400px;
     height:400px;
     margin:100px;
-    padding:10px;
     object-fit:cover;
     overflow:hidden;
-    padding-bottom: 5%;
 }
 /* styles for the footer */
 
