@@ -64,17 +64,16 @@ nav {
         display: flex;
         padding:1em 0;
         background-color: aliceblue;
+        text-align: center;
 }
 nav li{ 
         float: left;
-        text-align: center;
         list-style-type: none;
 }
    
 nav a{ 
         display: block;
         padding: 30px;
-        margin-right:auto;
         
 }
 a:hover { 
