@@ -4,7 +4,8 @@
 LECTURE / WEEK 07
 */ 
 
-/* Most likely broke my nav code once again, as I fixed my nav in the index and about page, we are back to square one fixing this secondary page */ 
+/* My nav system is sort of working, I am trying to understand why its smaller contained vs the other two. 
+    Will request support on this  */
 
 * {
     margin:10px auto;
@@ -13,12 +14,10 @@ LECTURE / WEEK 07
 }
 
 html { 
-
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: white;
 }  
-
 
 /* This is my navigation system that I am trying to center and create */
 
@@ -102,21 +101,22 @@ body{
 
 /* here is my table that i have practice, i think i have a solid foundation */
 table { 
-    border:4px solid pink;
+    border:4px solid darkgoldenrod;
     padding: 5px;
     margin:auto;
     width:55%;
 }
 #names {
-    background-color: rgb(219, 247, 247);
+    background-color: rgb(252, 247, 236);
     text-align: left;
-    border-bottom: 5px solid pink;
+    border-bottom: 5px solid darkgoldenrod;
 }
 thead tr{
-    border:1px solid pink;
+    border:1px solid darkgold;
 }
 caption {
     font-style: italic;
+    color:darkgoldenrod;
 }
 
 /* styles for the footer */
