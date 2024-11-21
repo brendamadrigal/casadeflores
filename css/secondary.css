@@ -1,69 +1,52 @@
 /*
 @author: Brenda Madrigal
-@ Date: NOVEMBER 14, 2024
-LECTURE / WEEK 06
-
+@ Date: NOVEMBER 20, 2024
+LECTURE / WEEK 07
 */ 
 
 /* Most likely broke my nav code once again, as I fixed my nav in the index and about page, we are back to square one fixing this secondary page */ 
 
-
-
 * {
-    margin:0px auto;
+    margin:10px auto;
     padding:10px 0;
     box-sizing: border-box;
-
 }
-
-/* Basic HTML that my bkg is and having the standard text font */
 
 html { 
-    background-color: #f7e1f1;
+
     font-family: Arial, Helvetica, sans-serif;
-}
-ul { 
-    width:1080px;
-    justify-content: space-between;
+    color: black;
+    background-color: white;
+}    
 
-}
-body{ 
-    width: 1400px;
-}
-
-/* Pseudo-class selector (change color when mouse is hovered over) */
-a:hover { 
-
-    color: rgb(230, 5, 114);
-    font-weight: bolder;
-
-}
 /* This is my navigation system that I am trying to center and create */
-nav {
-    display: flex;
-    padding:1em;
-    background-color: aliceblue;
-    text-align: center;
-    justify-content: space-between;
 
+nav {
+    display:flex;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    text-align: center;
+    height: 150px;  
+    align-items:center;
+    margin: 0px 100px;
 }
+
 nav li{ 
     float: left;
     list-style-type: none;
-    padding:3%;
-    justify-content: space-between;
-
 }
 
 nav a{ 
     display: block;
     padding: 30px;
-    
+
 }
+/* Pseudo-class selector (change color when mouse is hovered over) */
+
 a:hover { 
     color: rgb(230, 5, 114);
     font-weight: bolder;
-
+    background-color: #f7cfdc;
 }
 
 /* Class Selector */
@@ -78,7 +61,7 @@ a:hover {
 
 }
 .column {
-    clear: both;
+    clear:both;
     column-count:3;
     margin-top:10px;
     width: 100%;
@@ -87,6 +70,7 @@ a:hover {
     padding:0;
 }
 /*this is the text */
+
 p { 
     margin-top:5px;
     width: 100%;
@@ -100,21 +84,22 @@ p {
 .flowerdivider {
     clear:both;
     display:block;
-    width:1400px;
-    height:400px;
+    width: 100% 1400px;
+    padding:0;
+    height:300px;
     margin:100px;
     object-fit:cover;
     overflow:hidden;
 }
-/* styles for the footer */
 
+/* styles for the footer */
 footer {
     text-align:center;
     margin:10px;
     padding-bottom: 10%;
     padding:3px;
     clear:both;
-    border: 10px double plum;
+    border: 5px double black;
     background-color: snow;
-    width:100%;
+    width: 95%;
 }

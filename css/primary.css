@@ -1,44 +1,36 @@
 /*
 @author: Brenda Madrigal
-@ Date: NOVEMBER 14, 2024
-LECTURE / WEEK 06
-
-
+@ Date: NOVEMBER 20, 2024
+LECTURE / WEEK 07
 */ 
 
+/* MAJOR UPDATES HERE 
+WE REMOVED CONTENT THAT WAS POINTLESS, CHANGING AND FOCUSING ON HOW THE 
+WEB PAGE FLOWS, REMOVING LISTS, TRYING TO ALIGN THINGS TO MY MOCKUP*/
 
-/* centering my content */
-
-/* still a work in progress  */
-
+    
 * {
-        margin:0px auto;
+        margin:10px auto;
         padding:10px 0;
         box-sizing: border-box;
-
-}
-/* Pseudo-class selector (change color when mouse is hovered over) */
-a:hover { 
-
-        color: rgb(230, 5, 114);
-        font-weight: bolder;
-
 }
 
 html { 
 
         font-family: Arial, Helvetica, sans-serif;
         color: black;
-        background-color: #f7e1f1;
+        background-color: white;
 }    
 
 /* This is my navigation system that I am trying to center and create */
 
 nav {
-        display: flex;
-        padding:1em;
-        background-color: aliceblue;
+        display:flex;
+        border-top:1px solid black;
+        border-bottom:1px solid black;
         text-align: center;
+        height: 150px;  
+        align-items: center;
 }
 nav li{ 
         float: left;
@@ -50,60 +42,61 @@ nav a{
         padding: 30px;
         
 }
+/* Pseudo-class selector (change color when mouse is hovered over) */
 a:hover { 
         color: rgb(230, 5, 114);
         font-weight: bolder;
+        background-color: #f7cfdc;
     
     }
 /* Basic Tag Selector Examples */
 
 body{ 
-
         width: 1400px;
 }
 
 ul { 
-
-        height: 150px;
-        width:1080px;
-        
+        height: 50px;
+        width:1080px;      
 }
 
 
 h1 { 
-
         text-transform: uppercase;
         color: black;
         letter-spacing: .02em;
-    }
-
+}
 h2 {
         text-transform: capitalize;
-    }        
-
-
+}        
 h3 {
         color:blue;
         text-decoration: dotted underline blue; 
         font-size: 125%;
-    }       
-
+}       
+/*
 nav2 li {
         background-color: bisque;
         list-style: square;
         clear:both;
-
 }
+*/
 #typeofevent {
         float:left;
         clear:both;
 
+}
+.default-image {
+        vertical-align: middle;
+        overflow: content-box;
+        align-content: center;
 }
 
 p{ 
         margin:auto;
 }
 /* Class Selector Examples, on page bouquet.html */
+
 .center {
         display: block;
         margin-left: auto;
@@ -120,10 +113,9 @@ p{
         border: 10px dotted black;
         border-radius: 50px;
         width:1400px;
-        padding: 10px;
+        padding:10px;
         margin:5px;
-        margin-top: 15%;
- }
+}
 
 /* ID Selector */
 
@@ -132,10 +124,6 @@ p{
             font-style: italic;
             }   
 
-
-
-
-   
 /* target list  that are inside of dl */
 
 
@@ -144,22 +132,19 @@ dl li:nth-of-type(odd) {
             color: red;
             list-style-type: square;
             font-size: 25px;
-                    }
+ }
 
- 
 dl li:nth-of-type(even) {
 
             background-color: rgb(230, 173, 204);
             color: hotpink;
             font-size: 25px;
-                         }
+}
 
 
 /* styles for the footer */
 
 footer {
-
         margin: 0px 15px 0px 10px;
         padding:0;
-        
 }
