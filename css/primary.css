@@ -1,12 +1,11 @@
 /*
 @author: Brenda Madrigal
-@ Date: NOVEMBER 20, 2024
+@ Date: NOVEMBER 18, 2024
 LECTURE / WEEK 07
 */ 
 
-/* MAJOR UPDATES HERE 
-WE REMOVED CONTENT THAT WAS POINTLESS, CHANGING AND FOCUSING ON HOW THE 
-WEB PAGE FLOWS, REMOVING LISTS, TRYING TO ALIGN THINGS TO MY MOCKUP*/
+/* MAJOR UPDATES HERE  WE REMOVED CONTENT THAT WAS POINTLESS, CHANGING AND FOCUSING ON HOW THE 
+WEB PAGE FLOWS, REMOVING LISTS, TRYING TO ALIGN THINGS TO MY MOCKUP */
 
     
 * {
@@ -49,17 +48,12 @@ a:hover {
         background-color: #f7cfdc;
     
     }
+
 /* Basic Tag Selector Examples */
 
 body{ 
         width: 1400px;
 }
-
-ul { 
-        height: 50px;
-        width:1080px;      
-}
-
 
 h1 { 
         text-transform: uppercase;
@@ -70,9 +64,9 @@ h2 {
         text-transform: capitalize;
 }        
 h3 {
-        color:blue;
-        text-decoration: dotted underline blue; 
+        color:gold;
         font-size: 125%;
+        text-decoration: 1px solid darkgoldenrod;
 }       
 /*
 nav2 li {
@@ -87,14 +81,44 @@ nav2 li {
 
 }
 .default-image {
-        vertical-align: middle;
         overflow: content-box;
         align-content: center;
+        display:block;
+        float:left;
+        width:20%;
+    
 }
 
-p{ 
-        margin:auto;
+#florist { 
+        overflow: content-box;
+        align-content: center;
+        display:block;
+        float:left;
+        width:40%;
 }
+
+#aboutus {
+
+        clear: right;
+        margin:0, 10px;
+        padding: 0, 10px;
+        padding-left:10px;
+}
+
+#aboutus li { 
+        list-style-type: none;
+        
+}
+
+
+p{ 
+        padding:10px;
+        margin:auto;
+        align-content: center;
+        overflow: content-box;
+        padding-bottom: 20px;
+}
+
 /* Class Selector Examples, on page bouquet.html */
 
 .center {
@@ -109,9 +133,9 @@ p{
 
         font-style:italic;
         text-align: center;
-        background-color: pink;
-        border: 10px dotted black;
-        border-radius: 50px;
+        background-color: rgb(250, 238, 240);
+        border: 1px solid black;
+        border-radius: 10px;
         width:1400px;
         padding:10px;
         margin:5px;
@@ -119,13 +143,10 @@ p{
 
 /* ID Selector */
 
-#localplaces, 
-#flowerpower{
-            font-style: italic;
-            }   
-
-/* target list  that are inside of dl */
-
+#localplaces,  #flowerpower{
+        font-style: italic;
+}   
+/* target list  that are inside of dl  [MIGHT BRING THIS BACK]
 
 dl li:nth-of-type(odd) {
             background-color: rgba(234, 197, 224, 0.406);
@@ -133,7 +154,6 @@ dl li:nth-of-type(odd) {
             list-style-type: square;
             font-size: 25px;
  }
-
 dl li:nth-of-type(even) {
 
             background-color: rgb(230, 173, 204);
@@ -141,7 +161,7 @@ dl li:nth-of-type(even) {
             font-size: 25px;
 }
 
-
+*/ 
 /* styles for the footer */
 
 footer {
