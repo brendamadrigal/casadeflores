@@ -160,18 +160,6 @@ body{
 }
 
 
-/* Might bring this back might remove it completely 
-.flowerdivider {
-    clear:both;
-    display:block;
-    width: 100% 1400px;
-    padding:0;
-    height:300px;
-    margin:100px;
-    object-fit:cover;
-    overflow:hidden;
-}
-*/
 
 /* here is my table that i have practice, i think i have a solid foundation */
 table { 
@@ -193,14 +181,34 @@ caption {
     color:darkgoldenrod;
 }
 
-/* styles for the footer */
-footer {
-    text-align:center;
-    margin:10px;
-    padding-bottom: 10%;
-    padding:10px;
+.footercopy { 
     clear:both;
-    border: 5px double black;
-    background-color: snow;
-    width: 95%;
+    text-align:left;
+    background-color: black;
+    border: 1px solid black;
+    width:1400px;
+    height:200px;
+    padding:0px 15px;
+    margin:2px;
+    float:left;
+}
+
+/* id selector */
+
+#localplaces,  #flowerpower{
+    font-style: italic;
+}   
+/* styles for the footer */
+
+footer {
+    padding:0;
+    text-align:left;
+    color:white;
+    clear:both;
+}
+
+#logofooter {
+    display: block;
+    align-content: left;
+    float:left;
 }
