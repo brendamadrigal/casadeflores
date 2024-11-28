@@ -18,33 +18,7 @@ html {
         background-color: white;
 }    
 
-/*
-nav {
-        display:flex;
-        border-top:1px solid black;
-        border-bottom:1px solid black;
-        text-align: center;
-        height: 150px;  
-        align-items: center;
-}
-nav li{ 
-        float: left;
-        list-style-type: none;
-}
-nav ul ul { 
-        display: none;
-        position: absolute;
-        top: 100%;
-}
- 
-nav a{ 
-        display: block;
-        padding: 30px;
-        
-}
-*/
-
-/* margins and paddings */
+/* margins and paddings of the nav*/
 header body, ul, li, a {
         margin: 0;
         padding: 0;
@@ -71,16 +45,16 @@ nav > ul {
 } 
 /* basic list items */
 nav > ul > li {
-        position: relative; /* For positioning the dropdown */
+        position: relative; /*positioning the dropdown */
         margin: 0 15px;
     }
 
 /* link within in the nav */
 nav > ul > li > a {
-    color: hotpink; /* Black text for links */
-    padding: 15px 15px;
-    display: block;
-    font-size: 16px;
+        color: hotpink; /* Black text for links */
+        padding: 15px 15px;
+        display: block;
+        font-size: 16px;
 }
 
 /* hover effect for links */
@@ -90,38 +64,38 @@ nav > ul > li > a:hover {
 
 /* dropdown menu styling */
 nav > ul > li > ul {
-    position: absolute;
-    top: 100%; /* making sure this is below the menu */
-    left: 0;
-    background-color: #f3b6d0; /* Slightly lighter background for dropdown */
-    display: none; /* hidden */
-    min-width: 150px;
+        position: absolute;
+        top: 100%; /* making sure this is below the menu */
+        left: 0;
+        background-color: #f3b6d0; /*background for dropdown */
+        display: none; /* hidden */
+        min-width: 150px;
 }
 
 /* dropdown items */
 nav > ul > li > ul > li {
-    margin: 0;
+        margin: 0;
 }
 
 /* links in dropdown */
 nav > ul > li > ul > li > a {
-    color: rgb(240, 79, 178);
-    font-weight: bolder;
-    padding: 8px 12px;
-    display: block;
-    font-size: 14px;
+        color: rgb(240, 79, 178);
+        font-weight: bolder;
+        padding: 8px 12px;
+        display: block;
+        font-size: 14px;
 }
 
 /* show dropdown on hover */
 nav > ul > li:hover > ul {
-    display: block;
+        display: block;
 } 
 /* Pseudo-class selector (change color when mouse is hovered over) */
-a:hover { 
+a:hover {
         color: rgb(240, 79, 178);
         font-weight: bolder;
         background-color: rgb(253, 221, 237);
-    }
+}
 
 /* Basic Tag Selector Examples */
 
@@ -136,9 +110,11 @@ h1 {
 }
 h2 {
         text-transform: capitalize;
+        color:hotpink;
 }        
 h3 {
-        color:gold;
+        text-align: center;
+        color:darkgreen;
         font-size: 125%;
         text-decoration: 1px solid darkgoldenrod;
 }       
@@ -178,13 +154,16 @@ h3 {
         
 }
 
-
 p{ 
         padding:10px;
         margin:auto;
         align-content: center;
         overflow: content-box;
         padding-bottom: 20px;
+}
+fieldset { 
+        padding: 0 .5em;
+        width: 60%;
 }
 
 /* class selector examples, on page bouquet.html */

@@ -134,6 +134,7 @@ a:hover {
     padding-bottom:5%;
 
 }
+
 .column {
     clear:both;
     column-count:3;
@@ -157,6 +158,16 @@ p {
 
 body{ 
     width: 1400px;
+}
+
+
+
+fieldset {
+    padding: .5em;
+    border: 2px solid yellowgreen;
+    float: none;
+    margin-left: 1em;
+    width: auto;
 }
 
 

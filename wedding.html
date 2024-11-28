@@ -28,25 +28,38 @@
         <li> <a href="about.html" style="list-style:none;"> About Us </a>  <!--- this is an internal link--> </li>
         <li> <a href="bouquets.html" style="list-style:none;"> Bouquets </a> <!----this is an internal link --> </li>
 <!--<li><a href="https://youtu.be/4iMCv3Bt3wU?si=zZvJnguifWlC6uNw">Youtube</a> <!-- Music that inspires this project --> </li>
-        <li class="lastitem"><a href="type.html" style="list-style:none;"> Events</a>
+        <li class="lastitem"><a href="#" style="list-style:none;"> Services</a>
             <ul>
                 <li><a href="wedding.html">Wedding</a></li>
+                <li><a href="#">Valentines Day</a></li>
+                <li><a href="#">Mother's Day</a></li>
+
             </ul>
         </li>
         </ul>
     </nav>
 </header>
-
 <body>
-    <h2 style="text-align: center;" style="background-color: rgb(246, 216, 241);" style="text-decoration:wavy;"> Weddings Season of joy</h2>
+    <h2 style="text-align: center;"> Plan Your Special Day</h2>
         <img class="default-image">
-        <img src="images/oregon-wedding.jpg" style="width: 95%;">
-            <h3>
-                Wedding Season  🌸
-                </h3>
-                </br>
-            </p>
-            
+        <img src="images/reception-flower.jpg" style="width: 100%;">
+            <h3>Plan your special Events with us <br>Set up an Appointment to make arrangements🌸
+            </h3>
+            <fieldset>
+                <legend>Information</legend>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" required><br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                <label action=" Date"> Appointment Date:</label>
+                <input type="date" name="starting_date" id="starting_date"required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="999-999-9999" 
+				pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"><br>
+                <label>&nbsp;</label>
+                <input type="submit" id="submit" value="Submit">
+                <br>
+            </fieldset>       
 </body>
 <footer class="footercopy">
     <img class="logofooter" src="images/flowers.gif" alt="Flower Animation" width="50px">
