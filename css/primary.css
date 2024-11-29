@@ -33,7 +33,6 @@ nav {
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         font-family: Arial, sans-serif;
-
 }   
 /* nav list */
 nav > ul {
@@ -84,6 +83,7 @@ nav > ul > li > ul > li > a {
         padding: 8px 12px;
         display: block;
         font-size: 14px;
+
 }
 
 /* show dropdown on hover */
@@ -163,7 +163,7 @@ p{
 }
 fieldset { 
         padding: 0 .5em;
-        width: 60%;
+        width: 30%;
 }
 
 /* class selector examples, on page bouquet.html */
@@ -187,7 +187,6 @@ fieldset {
         margin:2px;
         float:left;
 }
-
 /* id selector */
 
 #localplaces,  #flowerpower{
