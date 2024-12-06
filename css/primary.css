@@ -1,7 +1,7 @@
 /*
 @author: Brenda Madrigal
-@ Date: NOVEMBER 24, 2024
-LECTURE / WEEK 08
+@ Date: December 1st, 2024
+LECTURE / WEEK 09
 */ 
 
     
@@ -205,4 +205,34 @@ footer {
         display: block;
         align-content: left;
         float:left;
+}
+/* media query for mobile screens (max width 768px) */
+@media (max-width: 768px) {
+nav ul {
+        flex-direction: column; /* this will make my nav items vertically */
+        align-items: center;
+}
+    
+nav ul li {
+            margin: 10px 0;
+}
+    
+img.default-image {
+        width: 100%; /* images are fully responsive */
+        height: auto;
+}
+    
+h1, h2 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+}
+    
+p {
+        padding: 0 10px; /* Add padding for readability */
+        }
+    
+footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 0.8em;
+}
 }

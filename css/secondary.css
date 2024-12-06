@@ -1,8 +1,9 @@
 /*
 @author: Brenda Madrigal
-@ Date: NOVEMBER 18, 2024
-LECTURE / WEEK 07
+@ Date: December 1st, 2024
+LECTURE / WEEK 09
 */ 
+
 
 /* My nav system is sort of working, I am trying to understand why its smaller contained vs the other two. 
     Will request support on this  */
@@ -19,28 +20,6 @@ html {
     background-color: white;
 }  
 
-/* This is my navigation system that I am trying to center and create */
-/*
-nav {
-    display:flex;
-    border-top:1px solid black;
-    border-bottom:1px solid black;
-    text-align: center;
-    height: 150px;  
-    align-items:center;
-    margin: 0px 100px;
-}
-
-nav li{ 
-    float: left;
-    list-style-type: none;
-}
-
-nav a{ 
-    display: block;
-    padding: 30px;
-
-}
 
 /* margins and paddings */
 header body, ul, li, a {
@@ -222,4 +201,45 @@ footer {
     display: block;
     align-content: left;
     float:left;
+}
+
+/* default styles (desktop view) */
+.figure {
+    display: inline-block; /* Figures will align side-by-side by default */
+    width: 30%; /* Adjust this based on how many figures you want per row */
+    margin: 1%; /* Add some spacing */
+    vertical-align: top; /* Align figures vertically */
+}
+
+/* media query for mobile screens */
+@media (max-width: 768px) {
+.figure {
+    display: block; /* Stack figures vertically */
+    width: 100%; /* Take up the full width of the container */
+    margin: 10px 0; /* Add spacing between figures */
+}
+
+nav ul {
+        flex-direction: column; /* this will make my nav items vertically */
+        align-items: center;
+}
+    
+nav ul li {
+            margin: 10px 0;
+}
+
+img {
+     width: 10%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p {
+    padding: 0 10px; /* Add padding for readability */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
 }
