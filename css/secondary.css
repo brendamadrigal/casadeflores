@@ -1,12 +1,10 @@
 /*
 @author: Brenda Madrigal
-@ Date: December 1st, 2024
-LECTURE / WEEK 09
-*/ 
+@ Date: December 7, 2024
+LECTURE / WEEK 10
+*/
 
-
-/* My nav system is sort of working, I am trying to understand why its smaller contained vs the other two. 
-    Will request support on this  */
+/* cleared most of my notes, i still left some comments to understand how things function this all */
 
 * {
     margin:10px auto;
@@ -123,15 +121,15 @@ nav ul li:hover ul {
     display: flex; /*flexbox */
     column-count: 3;
     width: 100%;
-    flex-wrap: wrap; /* Allows wrapping if content exceeds the container width */
-    justify-content: space-between; /* Space between columns */
-    gap: 5px; /* Optional: Adds spacing between columns */
+    flex-wrap: wrap; /* wrapping if content exceeds */
+    justify-content: space-between; /* space between columns */
+    gap: 5px; /*online stated that this is a good suggesiton to have on website */
 }
 #icon {
     max-width: 30%;
 }
-/*this is the text */
 
+/*this is the text */
 p { 
     margin-top:5px;
     width: 100%;

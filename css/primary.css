@@ -1,181 +1,187 @@
+/*
+@author: Brenda Madrigal
+@ Date: December 7, 2024
+LECTURE / WEEK 10
+*/ 
+
+
 * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
     
 html {
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
 }
     
 body {
-        width: 100%;
-        max-width: 1400px;
-        margin: 0 auto;
+    width: 100%; 
+    max-width: 1400px;
+    margin: 0 auto;
 }
     
 /* headers */
-header { 
-        padding-bottom: 2%;
+header {
+    padding-bottom: 2%;
 }
 header img { 
-        width:10%;
+    width:10%;
 }
 
 h1 {
-        text-transform: uppercase;
-        color: black;
-        letter-spacing: 0.02em;
-        text-align: center;
-        padding-bottom: 3%;
+    text-transform:uppercase;
+    color: black;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-bottom: 3%; /*padding around the nav bar */
 }
     
 h2 {
-        padding: 10px;
-        text-transform: capitalize;
-        color: hotpink;
-        text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    color: hotpink;
+    text-align: center;
 }
     
 h3 {
-        text-align: center;
-        color: darkgreen;
-        font-size: 125%;
-        text-decoration: 1px solid darkgoldenrod;
+    text-align: center;
+    color: darkgreen;
+    font-size: 125%;
+    text-decoration: 1px solid darkgoldenrod;
 }
     
 /* paragraphs */
 p {
-        padding: 10px;
-        margin: auto;
-        text-align: left;
-        overflow: content-box;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+    overflow: content-box;
 }
 
 /* container for about page for the img and text */
 .two-column {
-        display: flex;
-        align-items: flex-start; /* Aligns items at the top */
-        gap: 20px; /* Adds space between the image and the text */
-        margin: 20px 0;
-    }
+    display: flex;
+    align-items: flex-start; /* items at the top */
+    gap: 20px; /* Adds space between the image and the text */
+    margin: 20px 0;
+}
     
-/* Styling for the image */
+/* styling for about.html page for the image */
 two-column img {
-        width: 30%; /* Adjust the size as needed */
-        height: auto;
-        border-radius: 5px; /* Optional: adds rounded corners */
+    width: 30%; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: adds rounded corners */
 }
     
 /* styling for the text */
-    .two-column p {
-        flex: 1; /* Allows the text to expand to fill available space */
-        font-size: 1em;
-        line-height: 1.5; /* adjusting some readability */
-        text-align: left;
-        margin: 0;
-    }
+.two-column p {
+    flex: 1; /* Allows the text to expand to fill available space */
+    font-size: 1em;
+    line-height: 1.5; /* adjusting some readability */
+    text-align: left;
+}
     
 /* nav bar */
 nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        background-color: white;
-        border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
 }
     
 nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Centers the items */
-        align-items: center;
-        list-style: none;
-        padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centering nav items */
+    align-items: center;
+    list-style: none;
+    padding: 0;
 }
     
 nav ul li {
-        margin: 0 15px;
-        position: relative; /* For dropdown positioning */
+    margin: 0 15px;
+    position: relative; /* For dropdown positioning */
 }
     
 nav ul li a {
-        color: hotpink;
-        text-decoration: none;
-        padding: 10px 15px;
-        font-size: 16px;
-        display: block;
+    color: hotpink;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: block;
 }
     
 nav ul li a:hover {
-        background-color: #e0b2c6;
+    background-color: #e0b2c6;
 }
     
 /* dropdown menu style */
 nav ul li ul {
-        display: none;
-        text-align: center;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #f3b6d0;
-        min-width: 150px;
-        padding: 0;
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f3b6d0;
+    min-width: 150px;
+    padding: 0;
 }
     
-nav ul li ul li {
-        margin: 0;
-    }
+nav ul li ul li { 
+    margin: 0;
+}
     
 nav ul li ul li a {
-        color: rgb(240, 79, 178);
-        font-weight: bold;
-        font-size: 14px;
-        padding: 10px;
-        text-align: left;
+    color: rgb(240, 79, 178);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
 }
     
 nav ul li:hover ul {
-        display: block;
+    display: block;
 }
     
 /* images */
 #icon {
-        max-width: 30%;
+    max-width: 30%;
 }
 img {
-        max-width: 100%;
-        height: auto;
+    max-width: 100%;
+    height: auto;
 }
     
 .default-image {
-        width: 100%;
-        height: auto;
+    width: 100%;
+    height: auto;
 }
     
 /* footer */
 footer {
-        text-align: left;
-        padding: 10px;
-        font-size: 0.8em;
-        background-color: black;
-        color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.8em;
+    background-color: black;
+    color: white;
 }
     
 /* media query for mobile */
 @media (max-width: 768px) {
 nav {
-        flex-direction: column; /* Stack items vertically */
-        border: 0;
+    flex-direction: column; /* Stack items vertically */ 
+    border: 0;
 }
     
 nav ul {
-        flex-direction: column; /* Vertical layout for nav items */
-        align-items: center;
-        padding: 0;
+    flex-direction: column; /* Vertical layout for nav items */
+    align-items: center;
+    padding: 0;
 }
     
 nav ul li {
@@ -183,28 +189,28 @@ nav ul li {
 }
     
 nav ul li ul {
-        position: static; /* the dropdown positioning does not move */
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: left;
+    position: static; /* the dropdown positioning does not move */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
 }
     
 nav ul li:hover ul {
-        display: flex;
+    display: flex;
 }
     
 h1, h2 {
-        font-size: 1.5em; /* Scale headers for smaller screens */
+    font-size: 1.5em; /* smaller screens */
 }
     
 p {
-        padding: 0 10px;
+    padding: 0 10px;
 }
     
 footer {
-        text-align: left;
-        padding: 10px;
-        font-size: 0.8em;
-        }
+    text-align: left;
+    padding: 10px;
+    font-size: 0.8em;
+ }
 }
