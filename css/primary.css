@@ -1,238 +1,210 @@
-/*
-@author: Brenda Madrigal
-@ Date: December 1st, 2024
-LECTURE / WEEK 09
-*/ 
-
-    
 * {
-        margin:10px auto;
-        padding:10px 0;
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
-}
-
-html { 
-
+    }
+    
+html {
         font-family: Arial, Helvetica, sans-serif;
         color: black;
         background-color: white;
-}    
-
-/* margins and paddings of the nav*/
-header body, ul, li, a {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-decoration: none;
-        text-align: center;
-} 
-
-/* nav container */
-nav {
-        text-align: center;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-        font-family: Arial, sans-serif;
-}   
-/* nav list */
-nav > ul {
-        display: flex;
-        justify-content: space-around; /*spaces between link navs */
-        justify-content: center; /* centers nav items horizontally */
-        align-items: center; /* enters text*/
-        padding: 10px;
-} 
-/* basic list items */
-nav > ul > li {
-        position: relative; /*positioning the dropdown */
-        margin: 0 15px;
-    }
-
-/* link within in the nav */
-nav > ul > li > a {
-        color: hotpink; /* Black text for links */
-        padding: 15px 15px;
-        display: block;
-        font-size: 16px;
+}
+    
+body {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+}
+    
+/* headers */
+header { 
+        padding-bottom: 2%;
+}
+header img { 
+        width:10%;
 }
 
-/* hover effect for links */
-nav > ul > li > a:hover {
-    background-color: #f3b6d0;
-}
-
-/* dropdown menu styling */
-nav > ul > li > ul {
-        position: absolute;
-        top: 100%; /* making sure this is below the menu */
-        left: 0;
-        background-color: #f3b6d0; /*background for dropdown */
-        display: none; /* hidden */
-        min-width: 150px;
-}
-
-/* dropdown items */
-nav > ul > li > ul > li {
-        margin: 0;
-}
-
-/* links in dropdown */
-nav > ul > li > ul > li > a {
-        color: rgb(240, 79, 178);
-        font-weight: bolder;
-        padding: 8px 12px;
-        display: block;
-        font-size: 14px;
-
-}
-
-/* show dropdown on hover */
-nav > ul > li:hover > ul {
-        display: block;
-} 
-/* Pseudo-class selector (change color when mouse is hovered over) */
-a:hover {
-        color: rgb(240, 79, 178);
-        font-weight: bolder;
-        background-color: rgb(253, 221, 237);
-}
-
-/* Basic Tag Selector Examples */
-
-body{ 
-        width: 1400px;
-}
-
-h1 { 
+h1 {
         text-transform: uppercase;
         color: black;
-        letter-spacing: .02em;
+        letter-spacing: 0.02em;
+        text-align: center;
+        padding-bottom: 3%;
 }
+    
 h2 {
+        padding: 10px;
         text-transform: capitalize;
-        color:hotpink;
-}        
+        color: hotpink;
+        text-align: center;
+}
+    
 h3 {
         text-align: center;
-        color:darkgreen;
+        color: darkgreen;
         font-size: 125%;
         text-decoration: 1px solid darkgoldenrod;
-}       
-
-#typeofevent {
-        float:left;
-        clear:both;
-
 }
-.default-image {
-        overflow: content-box;
-        align-content: center;
-        display:block;
-        float:left;
-        width:20%;
     
-}
-
-#florist { 
+/* paragraphs */
+p {
+        padding: 10px;
+        margin: auto;
+        text-align: left;
         overflow: content-box;
-        align-content: center;
-        display:block;
-        float:left;
-        width:40%;
-}
-/*content for the about us page */ 
-#aboutus {
-
-        clear: right;
-        margin:0, 10px;
-        padding: 0, 10px;
-        padding-left:10px;
 }
 
-#aboutus li { 
-        list-style-type: none;
-        
+/* container for about page for the img and text */
+.two-column {
+        display: flex;
+        align-items: flex-start; /* Aligns items at the top */
+        gap: 20px; /* Adds space between the image and the text */
+        margin: 20px 0;
+    }
+    
+/* Styling for the image */
+two-column img {
+        width: 30%; /* Adjust the size as needed */
+        height: auto;
+        border-radius: 5px; /* Optional: adds rounded corners */
 }
-
-p{ 
-        padding:10px;
-        margin:auto;
-        align-content: center;
-        overflow: content-box;
-        padding-bottom: 20px;
-}
-fieldset { 
-        padding: 0 .5em;
-        width: 30%;
-}
-
-/* class selector examples, on page bouquet.html */
-
-.center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 25%;
-        height: 25%;
-}
-
-.footercopy { 
-        clear:both;
-        text-align:left;
-        background-color: black;
-        border: 1px solid black;
-        width:1400px;
-        height:200px;
-        padding:0px 15px;
-        margin:2px;
-        float:left;
-}
-/* id selector */
-
-#localplaces,  #flowerpower{
-        font-style: italic;
-}   
-/* styles for the footer */
-
-footer {
-        padding:0;
-        text-align:left;
-        color:white;
-        clear:both;
-}
-
-#logofooter {
-        display: block;
-        align-content: left;
-        float:left;
-}
-/* media query for mobile screens (max width 768px) */
-@media (max-width: 768px) {
-nav ul {
-        flex-direction: column; /* this will make my nav items vertically */
+    
+/* styling for the text */
+    .two-column p {
+        flex: 1; /* Allows the text to expand to fill available space */
+        font-size: 1em;
+        line-height: 1.5; /* adjusting some readability */
+        text-align: left;
+        margin: 0;
+    }
+    
+/* nav bar */
+nav {
+        display: flex;
+        justify-content: center;
         align-items: center;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid black;
+}
+    
+nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centers the items */
+        align-items: center;
+        list-style: none;
+        padding: 0;
 }
     
 nav ul li {
-            margin: 10px 0;
+        margin: 0 15px;
+        position: relative; /* For dropdown positioning */
 }
     
-img.default-image {
-        width: 100%; /* images are fully responsive */
+nav ul li a {
+        color: hotpink;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 16px;
+        display: block;
+}
+    
+nav ul li a:hover {
+        background-color: #e0b2c6;
+}
+    
+/* dropdown menu style */
+nav ul li ul {
+        display: none;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f3b6d0;
+        min-width: 150px;
+        padding: 0;
+}
+    
+nav ul li ul li {
+        margin: 0;
+    }
+    
+nav ul li ul li a {
+        color: rgb(240, 79, 178);
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px;
+        text-align: left;
+}
+    
+nav ul li:hover ul {
+        display: block;
+}
+    
+/* images */
+#icon {
+        max-width: 30%;
+}
+img {
+        max-width: 100%;
         height: auto;
 }
     
+.default-image {
+        width: 100%;
+        height: auto;
+}
+    
+/* footer */
+footer {
+        text-align: left;
+        padding: 10px;
+        font-size: 0.8em;
+        background-color: black;
+        color: white;
+}
+    
+/* media query for mobile */
+@media (max-width: 768px) {
+nav {
+        flex-direction: column; /* Stack items vertically */
+        border: 0;
+}
+    
+nav ul {
+        flex-direction: column; /* Vertical layout for nav items */
+        align-items: center;
+        padding: 0;
+}
+    
+nav ul li {
+        margin: 10px 0;
+}
+    
+nav ul li ul {
+        position: static; /* the dropdown positioning does not move */
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+}
+    
+nav ul li:hover ul {
+        display: flex;
+}
+    
 h1, h2 {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
+        font-size: 1.5em; /* Scale headers for smaller screens */
 }
     
 p {
-        padding: 0 10px; /* Add padding for readability */
-        }
+        padding: 0 10px;
+}
     
 footer {
-        text-align: center;
+        text-align: left;
         padding: 10px;
         font-size: 0.8em;
-}
+        }
 }

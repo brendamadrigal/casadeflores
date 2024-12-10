@@ -30,79 +30,72 @@ header body, ul, li, a {
     text-align: center;
 } 
 
-/* nav container */
+/* nav bar */
 nav {
-    text-align: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    font-family: Arial, sans-serif;
-
-}   
-/* nav list */
-nav > ul {
     display: flex;
-    justify-content: space-around; /*spaces between link navs */
-    justify-content: center; /* centers nav items horizontally */
-    align-items: center; /* enters text*/
-    padding: 10px;
-} 
-/* basic list items */
-nav > ul > li {
-    position: relative; /* For positioning the dropdown */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the items */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
     margin: 0 15px;
+    position: relative; /* For dropdown positioning */
 }
 
-/* link within in the nav */
-nav > ul > li > a {
-color: hotpink; /* Black text for links */
-padding: 15px 15px;
-display: block;
-font-size: 16px;
+nav ul li a {
+    color: hotpink;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: block;
 }
 
-/* hover effect for links */
-nav > ul > li > a:hover {
-background-color: #f3b6d0;
+nav ul li a:hover {
+    background-color: #e0b2c6;
 }
 
-/* dropdown menu styling */
-nav > ul > li > ul {
-position: absolute;
-top: 100%; /* making sure this is below the menu */
-left: 0;
-background-color: #f3b6d0; /* Slightly lighter background for dropdown */
-display: none; /* hidden */
-min-width: 150px;
+/* dropdown menu  */
+nav ul li ul {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f3b6d0;
+    min-width: 150px;
+    padding: 0;
 }
 
-/* dropdown items */
-nav > ul > li > ul > li {
-margin: 0;
+nav ul li ul li {
+    margin: 0;
 }
 
-/* links in dropdown */
-nav > ul > li > ul > li > a {
-color: rgb(240, 79, 178);
-font-weight: bolder;
-padding: 8px 12px;
-display: block;
-font-size: 14px;
-}
-
-/* show dropdown on hover */
-nav > ul > li:hover > ul {
-display: block;
-} 
-/* Pseudo-class selector (change color when mouse is hovered over) */
-a:hover { 
+nav ul li ul li a {
     color: rgb(240, 79, 178);
-    font-weight: bolder;
-    background-color: rgb(253, 221, 237);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+}
+
+nav ul li:hover ul {
+    display: block;
 }
 
 
-
-/* Class Selector */
+/* class selector */
 
 .figure {
     display:block;
@@ -113,7 +106,7 @@ a:hover {
     padding-bottom:5%;
 
 }
-
+/* removing this trying to add flexboxes... tears this is driving me insane
 .column {
     clear:both;
     column-count:3;
@@ -122,6 +115,20 @@ a:hover {
     float: left;
     overflow:hidden;
     padding:0;
+}
+
+*/ 
+
+.column {
+    display: flex; /*flexbox */
+    column-count: 3;
+    width: 100%;
+    flex-wrap: wrap; /* Allows wrapping if content exceeds the container width */
+    justify-content: space-between; /* Space between columns */
+    gap: 5px; /* Optional: Adds spacing between columns */
+}
+#icon {
+    max-width: 30%;
 }
 /*this is the text */
 
@@ -143,7 +150,7 @@ body{
 
 fieldset {
     padding: .5em;
-    border: 2px solid yellowgreen;
+    border: 2px solid rgb(255, 0, 170);
     float: none;
     margin-left: 1em;
     width: auto;
@@ -189,12 +196,12 @@ caption {
     font-style: italic;
 }   
 /* styles for the footer */
-
 footer {
-    padding:0;
-    text-align:left;
-    color:white;
-    clear:both;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.8em;
+    background-color: black;
+    color: white;
 }
 
 #logofooter {
@@ -213,33 +220,39 @@ footer {
 
 /* media query for mobile screens */
 @media (max-width: 768px) {
-.figure {
-    display: block; /* Stack figures vertically */
-    width: 100%; /* Take up the full width of the container */
-    margin: 10px 0; /* Add spacing between figures */
+nav {
+    flex-direction: column; /* Stack nav items vertically */
+    max-width: 768px;
+    border: none;
 }
 
 nav ul {
-        flex-direction: column; /* this will make my nav items vertically */
-        align-items: center;
-}
-    
-nav ul li {
-            margin: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-img {
-     width: 10%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
+nav ul li ul {
+    position: static;
+    display: none;
 }
 
-p {
-    padding: 0 10px; /* Add padding for readability */
+nav ul li:hover ul {
+    display: block;
+}
+
+.figure {
+    display: block; /* Ensure the figures act as block-level elements */
+    text-align: center; /* Center the content inside the figure */
+    width: 25%; /* Adjust width for smaller screens */
+}
+
+table {
+    width: 90%; /* Expand table width for smaller screens */
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    text-align: center; /* Ensure consistent alignment */
 }
 }
