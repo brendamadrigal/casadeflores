@@ -7,8 +7,8 @@ LECTURE / WEEK 10
 /* cleared most of my notes, i still left some comments to understand how things function this all */
 
 * {
-    margin:10px auto;
-    padding:10px 0;
+    margin: 0;
+    padding:0;
     box-sizing: border-box;
 }
 
@@ -16,10 +16,30 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: white;
-}  
+} 
+/* headers */
+header {
+    padding-bottom: 2%;
+}
+header img { 
+    width:10%;
+}
 
+h1 {
+    text-transform:uppercase;
+    color: black;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-bottom: 3%; /*padding around the nav bar */
+}
 
 /* margins and paddings */
+body {
+    width: 100%; 
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 header body, ul, li, a {
     margin: 0;
     padding: 0;
@@ -27,6 +47,21 @@ header body, ul, li, a {
     text-decoration: none;
     text-align: center;
 } 
+
+/* paragraphs */
+p {
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+    overflow: content-box;
+}
+#submit {
+    padding: .5em;
+    margin: 1em;
+    color:black;
+    background-color: rgb(243, 178, 201);
+    border-radius: 10%;
+}
 
 /* nav bar */
 nav {
@@ -41,7 +76,7 @@ nav {
 nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centers the items */
+    justify-content: center; /* centering nav  */
     align-items: center;
     list-style: none;
     padding: 0;
@@ -49,7 +84,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
-    position: relative; /* For dropdown positioning */
+    position: relative; /*  dropdown positioning */
 }
 
 nav ul li a {
@@ -94,7 +129,6 @@ nav ul li:hover ul {
 
 
 /* class selector */
-
 .figure {
     display:block;
     float:left;
@@ -104,6 +138,7 @@ nav ul li:hover ul {
     padding-bottom:5%;
 
 }
+
 /* removing this trying to add flexboxes... tears this is driving me insane
 .column {
     clear:both;
@@ -114,7 +149,6 @@ nav ul li:hover ul {
     overflow:hidden;
     padding:0;
 }
-
 */ 
 
 .column {
@@ -126,7 +160,7 @@ nav ul li:hover ul {
     gap: 5px; /*online stated that this is a good suggesiton to have on website */
 }
 #icon {
-    max-width: 30%;
+    max-width:30%;
 }
 
 /*this is the text */
@@ -144,8 +178,6 @@ body{
     width: 1400px;
 }
 
-
-
 fieldset {
     padding: .5em;
     border: 2px solid rgb(255, 0, 170);
@@ -155,8 +187,7 @@ fieldset {
 }
 
 
-
-/* here is my table that i have practice, i think i have a solid foundation */
+/* here is my table that i have practice */
 table { 
     border:4px solid darkgoldenrod;
     padding: 5px;
@@ -172,28 +203,27 @@ thead tr{
     border:1px solid darkgold;
 }
 caption {
+    padding-bottom: 5%;
     font-style: italic;
     color:darkgoldenrod;
-}
-
-.footercopy { 
-    clear:both;
-    text-align:left;
-    background-color: black;
-    border: 1px solid black;
-    width:1400px;
-    height:200px;
-    padding:0px 15px;
-    margin:2px;
-    float:left;
 }
 
 /* id selector */
 
 #localplaces,  #flowerpower{
     font-style: italic;
-}   
-/* styles for the footer */
+}  
+
+/* images */
+#icon {
+    max-width: 20%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+   
+/* footer */
 footer {
     text-align: left;
     padding: 10px;
@@ -202,55 +232,63 @@ footer {
     color: white;
 }
 
-#logofooter {
-    display: block;
-    align-content: left;
-    float:left;
-}
-
 /* default styles (desktop view) */
 .figure {
-    display: inline-block; /* Figures will align side-by-side by default */
-    width: 30%; /* Adjust this based on how many figures you want per row */
-    margin: 1%; /* Add some spacing */
-    vertical-align: top; /* Align figures vertically */
+    display: inline-block; /* colums will align side-by-side */
+    width: 30%; /* adjusted for the rows */ 
+    margin: 1%; 
+    vertical-align: top; 
 }
 
 /* media query for mobile screens */
 @media (max-width: 768px) {
 nav {
-    flex-direction: column; /* Stack nav items vertically */
-    max-width: 768px;
-    border: none;
+    flex-direction: column; /* stack items */ 
+    border: 0;
 }
-
+        
 nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column; /* nav items */
+    align-items: center; 
+    padding: 0;
 }
-
+        
+nav ul li {
+    margin: 10px 0;
+}
+        
 nav ul li ul {
-    position: static;
+    position: static; /* the dropdown positioning does not move */
     display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
 }
-
+        
 nav ul li:hover ul {
-    display: block;
+    display: flex;
+}
+        
+h1, h2 {
+    font-size: 1.5em; /* smaller screens */
+}
+        
+p {
+    padding: 0 10px;
 }
 
 .figure {
-    display: block; /* Ensure the figures act as block-level elements */
-    text-align: center; /* Center the content inside the figure */
+    display: block; /* block-level elements */
+    text-align: center; /* the content inside the figure */
     width: 25%; /* Adjust width for smaller screens */
 }
 
 table {
-    width: 90%; /* Expand table width for smaller screens */
+    width: 50%; 
 }
 
 footer {
     font-size: 0.9em;
-    text-align: center; /* Ensure consistent alignment */
+    text-align: left;
 }
 }

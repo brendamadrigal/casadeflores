@@ -4,7 +4,6 @@
 LECTURE / WEEK 10
 */ 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -150,18 +149,17 @@ nav ul li:hover ul {
     
 /* images */
 #icon {
-    max-width: 30%;
+    max-width: 20%;
 }
 img {
     max-width: 100%;
     height: auto;
-}
-    
+}    
 .default-image {
     width: 100%;
     height: auto;
-}
-    
+} 
+
 /* footer */
 footer {
     text-align: left;
@@ -170,44 +168,37 @@ footer {
     background-color: black;
     color: white;
 }
-    
+
 /* media query for mobile */
 @media (max-width: 768px) {
 nav {
     flex-direction: column; /* Stack items vertically */ 
     border: 0;
 }
-    
 nav ul {
     flex-direction: column; /* Vertical layout for nav items */
     align-items: center;
     padding: 0;
-}
-    
-nav ul li {
-        margin: 10px 0;
-}
-    
+} 
+nav ul li { 
+    margin: 10px 0;
+}  
 nav ul li ul {
     position: static; /* the dropdown positioning does not move */
     display: none;
     flex-direction: column;
     width: 100%;
     text-align: left;
-}
-    
+} 
 nav ul li:hover ul {
     display: flex;
-}
-    
+}  
 h1, h2 {
     font-size: 1.5em; /* smaller screens */
-}
-    
+}  
 p {
     padding: 0 10px;
-}
-    
+}  
 footer {
     text-align: left;
     padding: 10px;
